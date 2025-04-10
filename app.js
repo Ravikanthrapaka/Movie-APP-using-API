@@ -143,7 +143,3 @@ function search(){
 
 
 
-
-window.onload = function () {
-    search("Inception");
-};
