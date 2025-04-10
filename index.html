@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App using API</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header text-center">
+        <div class="flex justify-center">
+
+            <img class="logo" src="Netflix_Symbol_PMS.png" alt="">
+
+        </div>
+        
+        
+        <h2 class=" text-3xl font-bold text-neutral-100">Search unlimited movies, TV shows and more</h2>
+        <p class="text-neutral-400 text-lg">Ready to watch? Enter your movie name to check if its a good choice!</p>
+        <div class="flex mt-3">
+            <input  class="input px-4 py-3 text-white" type="text" id="movieName"  placeholder="Search movie">
+
+            <button onclick="search()" class="btn">Search Movie</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="container"  class="w-[700px] mx-auto mt-16">
+
+        <div class="flex gap-10 text-neutral-200">
+
+            <div>
+
+                <h1 id="title" class="text-2xl font-bold">RRR</h1>
+                <p class="my-1">Genre : <span id="genre" class="text-neutral-200">Action, Adventure, Drama</span></p>
+
+
+                <p id="desc" class="text-md text-neutral-300">A fearless warrior on a perilous mission comes face to face with a steely cop serving British forces in this epic saga set in pre-independent India.                </p>
+
+                <p class="my-1">Actors : <span id="actors" class="text-neutral-200">N.T. Rama Rao Jr., Ram Charan, Ajay Devgn</span></p>
+                <p class="my-1">Directors : <span id="directors" class="text-neutral-200">S.S. Rajamouli</span></p>
+                <p class="my-1">Awards : <span id="awards" class="text-neutral-200">Won 1 Oscar. 93 wins & 158 nominations total</span></p>
+                <p class="my-1">💰Box office collection : <span id="collection" class="text-neutral-200">$15,156,051</span></p>
+                <p class="my-1">🌐Languages : <span id="lng" class="text-neutral-200">Telugu</span></p>
+                <p class="my-1">⭐IMDB Ratings : <span id="ratings" class="text-neutral-200">7.8</span></p>
+
+            </div>
+
+            <div class="banner">
+
+                <img id="poster" class="poster rounded-xl hover:shadow-2xl hover:shadow-red-500/50" src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_SX300.jpg" alt="">
+            
+            
+                <div class="suggestion">Worth Watching</div>
+                
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <h1 id="error" class="text-3xl font-bold text-center my-36 text-neutral-100"></h1>
+
+
+    <p id="error" class="text-red-500 mt-2"></p>
+    
+    <div id="spinner" class="hidden flex justify-center mt-10">
+        <div class="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 border-solid"></div>
+      </div>
+
+    <script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
