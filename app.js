@@ -60,7 +60,7 @@ let suggestion=document.querySelector('.suggestion')
 
 
 
-let spinner = document.getElementById('spinner');
+// let spinner = document.getElementById('spinner');
 
 function search(){
 
@@ -75,7 +75,7 @@ function search(){
 
         error.innerText="Please enter a movie name!"
         // container.classList.add('hidden')
-          spinner.classList.add('hidden');
+          // spinner.classList.add('hidden');
         return
     }
 
@@ -83,7 +83,7 @@ function search(){
 
     error.innerText = '';
     container.classList.add('hidden');   // hide previous movie data
-    spinner.classList.remove('hidden');
+    // spinner.classList.remove('hidden');
 
 
 
