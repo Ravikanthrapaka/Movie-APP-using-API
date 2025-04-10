@@ -74,7 +74,7 @@ function search(){
     if(movieInput.value.trim()===''){
 
         error.innerText="Please enter a movie name!"
-        // container.classList.add('hidden')
+        container.classList.add('hidden')
         return
     }
 
